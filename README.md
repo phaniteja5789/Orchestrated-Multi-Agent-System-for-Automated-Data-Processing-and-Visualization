@@ -47,7 +47,8 @@ Based on the Next, the request will be sent to the Node and the Node will invoke
 
 The Workflow is as below graph,
 
-                   ![image](https://github.com/user-attachments/assets/3ab5c02c-a712-439e-a3c1-c9351ff2f076)
+
+![output](https://github.com/user-attachments/assets/d0d544c6-6d15-49b4-ae5f-7f2ffde2c66e)
 
 Once the entire request has been processed, the Supervisor will send the messages as "FINISH" which stops the execution.
 
