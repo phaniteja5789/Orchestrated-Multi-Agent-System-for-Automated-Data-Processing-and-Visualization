@@ -21,7 +21,7 @@ Analyzer Agent ==> This Agent is responsible for generating a SQL Query and Anal
                    I have created a workflow in QueryGenerator.py which has 2 Nodes (Query_Gen_Node, invoke_tool) and added the edges.
                    The Query_Gen_Node ==> This Node is used to generate the SQL Query
                    Invoke_tool ==> This tool will use tool_calls and execute the SQL Query generated and return the result.
-                   I have used a state called SQLState which tracks the messages between the nodes of the LangGraph
+                   I have used a state called SQLState which tracks the messages between the nodes of the workflow of SQLAgent Workflow which is called as Analyzer Agent
 
 Visualizer Agent ==> This Agent is resposible for generating a Matplotlib Graph based on the result
                      It uses PythonREPL Tool, which is used to generate the code and generate the MatplotLib Chart
