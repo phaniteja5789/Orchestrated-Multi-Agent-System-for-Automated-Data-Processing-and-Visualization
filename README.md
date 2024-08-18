@@ -60,3 +60,8 @@ The Workflow is as below graph,
 Once the entire request has been processed, the Supervisor will send the messages as "FINISH" which stops the execution.
 
 
+Frameworks used ==> LangChain, LangGraph
+LLMs used ==> OpenAI
+
+
+
