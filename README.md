@@ -26,6 +26,13 @@ Analyzer Agent ==> This Agent is responsible for generating a SQL Query and Anal
 Visualizer Agent ==> This Agent is resposible for generating a Matplotlib Graph based on the result
                      It uses PythonREPL Tool, which is used to generate the code and generate the MatplotLib Chart
 
+
+Supervisor Agent ==> A static System Prompt is used which has members (Extractor, Analyzer,Visualizer) and it also uses the NEXT in order to choose which Agent needs to be invoked based on the Input Text
+                     It uses the tool calling which has function "Route" which determines which Agent to invoke.
+                     Creation_Of_Supervisor_Chain ==> which is used to create a chain which has System Prompt and a LLM which bind the tools and return the Chain.                     
+                     
+
+
 SourceCode.py ==> This is the entry point for the execution of the multi agent
 In SourceCode.py, I have created a workflow where it is responsible for creation of nodes and creation of agents
 
@@ -51,4 +58,5 @@ The Workflow is as below graph,
 ![output](https://github.com/user-attachments/assets/d0d544c6-6d15-49b4-ae5f-7f2ffde2c66e)
 
 Once the entire request has been processed, the Supervisor will send the messages as "FINISH" which stops the execution.
+
 
